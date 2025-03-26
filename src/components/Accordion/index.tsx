@@ -1,6 +1,7 @@
 import { Accordion } from "radix-ui";
 import { ChevronDownIcon } from "@radix-ui/react-icons";
 import "./styles.css";
+import styled from "styled-components";
 
 const faqData = [
   {
@@ -31,16 +32,34 @@ const faqData = [
   },
 ];
 
+const StyledAccortionItem = styled(Accordion.Item)`
+  overflow: hidden;
+  margin-top: 4px;
+
+  &:first-child {
+    margin-top: 0;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+  }
+
+  &:last-child {
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+  }
+
+  &:focus-within {
+    position: relative;
+    z-index: 1;
+    box-shadow: 0 0 0 2px var(--mauve-12);
+  }
+`;
+
 const AccordionDemo = () => {
   return (
-    <Accordion.Root
-      className="AccordionRoot"
-      type="single"
-      collapsible
-    >
+    <Accordion.Root className="AccordionRoot" type="single" collapsible>
       {faqData.map((faq, index) => {
         return (
-          <Accordion.Item
+          <StyledAccortionItem
             className="AccordionItem"
             key={index}
             value={`item-${index}`}
@@ -52,7 +71,7 @@ const AccordionDemo = () => {
             <Accordion.Content className="AccordionContent">
               {faq.answer}
             </Accordion.Content>
-          </Accordion.Item>
+          </StyledAccortionItem>
         );
       })}
     </Accordion.Root>
