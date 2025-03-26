@@ -1,7 +1,8 @@
 import "./App.css";
+import PopoverDemo from "./components/Popover";
 
 function App() {
-  return <h1>Olá mundo</h1>;
+  return <PopoverDemo />;
 }
 
 export default App;
