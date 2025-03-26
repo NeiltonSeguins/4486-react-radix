@@ -4,8 +4,8 @@ import { Popover } from "radix-ui";
 function PopoverDemo() {
   return (
     <Popover.Root>
-      <Popover.Trigger className="PopoverTrigger">
-        Mais informações
+      <Popover.Trigger asChild className="PopoverTrigger">
+        <a href="#">Mais informações</a>
       </Popover.Trigger>
       <Popover.Portal>
         <Popover.Content className="PopoverContent">
