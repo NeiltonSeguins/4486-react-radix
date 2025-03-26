@@ -1,8 +1,8 @@
 import "./App.css";
-import PopoverDemo from "./components/Popover";
+import AccordionDemo from "./components/Accordion";
 
 function App() {
-  return <PopoverDemo />;
+  return <AccordionDemo />;
 }
 
 export default App;
