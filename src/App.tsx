@@ -1,8 +1,8 @@
 import "./App.css";
-import SwitchDemo from "./components/Switch";
+import DialogDemo from "./components/Dialog";
 
 function App() {
-  return <SwitchDemo />;
+  return <DialogDemo />;
 }
 
 export default App;
