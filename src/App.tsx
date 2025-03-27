@@ -1,8 +1,8 @@
 import "./App.css";
-import CheckboxDemo from "./components/Checkbox";
+import SliderDemo from "./components/Slider";
 
 function App() {
-  return <CheckboxDemo />;
+  return <SliderDemo />;
 }
 
 export default App;
