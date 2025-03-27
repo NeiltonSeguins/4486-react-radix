@@ -1,8 +1,8 @@
 import "./App.css";
-import RadioGroupDemo from "./components/RadioGroup";
+import CheckboxDemo from "./components/Checkbox";
 
 function App() {
-  return <RadioGroupDemo />;
+  return <CheckboxDemo />;
 }
 
 export default App;
