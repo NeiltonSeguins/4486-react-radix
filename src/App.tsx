@@ -1,8 +1,8 @@
 import "./App.css";
-import PopoverDemo from "./components/Popover";
+import SelectDemo from "./components/Select";
 
 function App() {
-  return <PopoverDemo />;
+  return <SelectDemo />;
 }
 
 export default App;
