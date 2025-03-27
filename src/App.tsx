@@ -1,8 +1,8 @@
 import "./App.css";
-import AccordionDemo from "./components/Accordion";
+import ToastDemo from "./components/Toast";
 
 function App() {
-  return <AccordionDemo />;
+  return <ToastDemo />;
 }
 
 export default App;
