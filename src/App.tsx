@@ -1,8 +1,8 @@
 import "./App.css";
-import ToastDemo from "./components/Toast";
+import RadioGroupDemo from "./components/RadioGroup";
 
 function App() {
-  return <ToastDemo />;
+  return <RadioGroupDemo />;
 }
 
 export default App;
