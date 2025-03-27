@@ -1,7 +1,6 @@
 .AccordionRoot {
-  border-radius: 6px;
-  width: 500px;
-  background-color: #510f46;
+  border-radius: 8px;
+  width: 550px;
 }
 
 .AccordionItem {
@@ -27,36 +26,40 @@
 }
 
 .AccordionTrigger {
-  padding: 20px;
+  padding: 16px;
   height: 45px;
   flex: 1;
   display: flex;
   align-items: center;
   justify-content: space-between;
   line-height: 1;
-  background-color: #982384;
+  background-color: #19325c;
   color: #ffffff;
   border: none;
+  border-radius: 8px;
   width: 100%;
   text-align: start;
 }
 
 .AccordionContent {
   overflow: hidden;
-  color: #ffffff;
-  padding: 8px 20px;
-  text-align: start;
+  font-weight: 300;
+  color: #19325c;
+  padding: 16px;
+  text-align: justify;
+  background-color: #e5ebf5;
 }
 .AccordionContent[data-state="open"] {
-  animation: slideDown 300ms cubic-bezier(0.87, 0, 0.13, 1);
+  animation: slideDown 200ms ease;
+  margin-top: -5px;
 }
 .AccordionContent[data-state="closed"] {
-  animation: slideUp 300ms cubic-bezier(0.87, 0, 0.13, 1);
+  animation: slideUp 200ms ease;
 }
 
 .AccordionChevron {
-  color: var(--violet-10);
-  transition: transform 300ms cubic-bezier(0.87, 0, 0.13, 1);
+  color: #ffffff;
+  transition: transform 200ms ease;
 }
 .AccordionTrigger[data-state="open"] > .AccordionChevron {
   transform: rotate(180deg);

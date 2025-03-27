@@ -1,8 +1,8 @@
 import "./App.css";
-import SelectDemo from "./components/Select";
+import AccordionDemo from "./components/Accordion";
 
 function App() {
-  return <SelectDemo />;
+  return <AccordionDemo />;
 }
 
 export default App;
