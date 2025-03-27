@@ -1,0 +1,44 @@
+.SwitchWrapper {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.SwitchRoot {
+  width: 42px;
+  height: 25px;
+  background-color: #fff;
+  border-color: #49454f;
+  border-radius: 9999px;
+  position: relative;
+
+  &:focus {
+    box-shadow: 0 0 0 1px black;
+  }
+
+  &[data-state="checked"] {
+    background-color: #E6E0E9;
+  }
+}
+
+.SwitchThumb {
+  display: flex;
+  align-items: center;
+  width: 20px;
+  height: 20px;
+  background-color: #6750a4;
+  border-radius: 9999px;
+  transition: transform 100ms;
+  transform: translateX(-6px) translateY(-0.5px);
+  will-change: transform;
+
+  &[data-state="checked"] {
+    transform: translateX(12px) translateY(-0.5px);
+  }
+}
+
+.Label {
+  color: #49454f;
+  font-size: 1rem;
+  user-select: none;
+}

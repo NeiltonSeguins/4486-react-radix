@@ -1,8 +1,8 @@
 import "./App.css";
-import SliderDemo from "./components/Slider";
+import SwitchDemo from "./components/Switch";
 
 function App() {
-  return <SliderDemo />;
+  return <SwitchDemo />;
 }
 
 export default App;
