@@ -1,8 +1,8 @@
 import "./App.css";
-import DialogDemo from "./components/Dialog";
+import MenuBarDemo from "./components/MenuBar";
 
 function App() {
-  return <DialogDemo />;
+  return <MenuBarDemo />;
 }
 
 export default App;
